@@ -56,40 +56,7 @@ header('location:manage-authors.php');
                             </div>
 
 </div>
-<div class="row">
-<div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3"">
-<div class="panel panel-info">
-<div class="panel-heading">
-Publication Info
-</div>
-<div class="panel-body">
-<form role="form" method="post">
-<div class="form-group">
-<label>Publication Name</label>
-<?php 
-$athrid=intval($_GET['athrid']);
-$sql = "SELECT * from  tblauthors where id=:athrid";
-$query = $dbh -> prepare($sql);
-$query->bindParam(':athrid',$athrid,PDO::PARAM_STR);
-$query->execute();
-$results=$query->fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
-if($query->rowCount() > 0)
-{
-foreach($results as $result)
-{               ?>   
-<input class="form-control" type="text" name="author" value="<?php echo htmlentities($result->AuthorName);?>" required />
-<?php }} ?>
-</div>
 
-<button type="submit" name="update" class="btn btn-info">Update </button>
-
-                                    </form>
-                            </div>
-                        </div>
-                            </div>
-
-        </div>
    
     </div>
     </div>
