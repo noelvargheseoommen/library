@@ -68,9 +68,8 @@ echo '<script>alert("Your profile has been updated")</script>';
 
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link" href="library.html"><i class="fas fa-table"></i><span>Library</span></a><a class="nav-link" href="books.html"><i class="fas fa-tachometer-alt"></i><span>My books</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="history.html"><i class="fa fa-history"></i>History</a></li>
-                    <li class="nav-item"><a class="nav-link" href="fine.html"><i class="fa fa-money"></i>Fines</a></li>
+                    <li class="nav-item"><a class="nav-link" href="request-a-book.php"><i class="fas fa-table"></i><span>Library</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="issued-books.php"><i class="fas fa-user"></i><span>My Books</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="my-profile.php"><i class="fas fa-user"></i><span>Account settings</span></a></li>
                     <li class="nav-item"></li>
                 </ul>
@@ -94,7 +93,7 @@ echo '<script>alert("Your profile has been updated")</script>';
                             <li class="nav-item dropdown no-arrow">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small"><?php echo htmlentities($result->FullName);?></span><img class="border rounded-circle img-profile" src="../assets/img/avatars/avatar1.jpeg"></a>
                                     <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="profile.html"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="../index.html"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="./index.php"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
                                     </div>
                                 </div>
                             </li>

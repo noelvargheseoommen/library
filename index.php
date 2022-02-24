@@ -25,7 +25,7 @@ if($query->rowCount() > 0)
 if($result->Status==1)
 {
 $_SESSION['login']=$_POST['emailid'];
-echo "<script type='text/javascript'> document.location ='dashboard.php'; </script>";
+echo "<script type='text/javascript'> document.location ='my-profile.php'; </script>";
 } else {
 echo "<script>alert('Your Account Has been blocked .Please contact admin');</script>";
 
@@ -47,7 +47,7 @@ echo "<script>alert('Invalid Details');</script>";
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System | </title>
+    <title>Saintgits Library </title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
